@@ -1,34 +1,60 @@
-<div class="sidebar col-md-3">
-	{% include next_module.html %}
+
+<!-- sidebar dla modułów kursu -->
+<div class="sidebar col-md-4">
+	<div class="sidebar-title">
+				Kurs
+			</div>
+	<!-- {% include next_module.html %}
 
 	{% if prev %}
 		<div class="pagination-section">
 			<div class="title">
-				Previous module:
+				Poprzedni moduł:
 			</div>
 			<a rel="prev" class="prev" href="{{ site.baseurl }}{{ prev_post.url }}">
 				{{ prev }} </a>
 		</div>
 		<hr />
-	{% endif %}
-	<ul>
-		{% for post in site.categories[module] reversed %}
-			<li class="{% if post.url == page.url %}active{% endif %} {% if forloop.first %}first{% endif %} {% if forloop.last %}last{% endif %}">
-				<a
-						href="{{ site.baseurl }}{{ post.url }}">
-					{{ post.title }}
-				</a>
-			</li>
-		{% endfor %}
-	</ul>
-	{% if next %}
+	{% endif %}  -->
+			<ul class="module-name">
+			{% for module in site.data.course.modules %}
+					{% assign first_post = site.categories[module]|reverse|first %}
+						
+					
+					<li class="dropdown {% if page.categories[1] == module %}active{% endif %} {% if forloop.first %}first{% endif %} {% if forloop.last %}last{% endif %}">		
+					
+						
+							{{ module }}
+						<i class="fa fa-angle-down" aria-hidden="true"></i>
+						<!-- <i class="fa fa-angle-up" aria-hidden="true"></i> -->
+					   
+						
+						<ul class="sidebar1">
+							{% for post in site.categories[module] reversed %}
+							<li class="dropdown {% if post.url == page.url %}active{% endif %} {% if forloop.first %}first{% endif %} {% if forloop.last %}last{% endif %}">
+							<a href="{{ site.baseurl }}{{ post.url }}" 
+							   class="dropdown-item">
+							{{ post.title }}
+							</a>
+							</li>
+								{% endfor %}
+						</ul>
+					</li>
+					
+	
+			{% endfor %}	
+		</ul>	
+	
+	
+	
+	<!-- {% if next %}
 		<hr />
 		<div class="pagination-section">
 			<div class="title">
-				Next module:
+				Następny moduł:
 			</div>
 			<a rel="next" class="next" href="{{ site.baseurl }}{{ next_post.url }}"> {{ next }}
 			</a>
 		</div>
-	{% endif %}
+	{% endif %} -->
 </div>

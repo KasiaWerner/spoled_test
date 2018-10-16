@@ -35,7 +35,7 @@ $navbar-light: $gray-snow;
 	transition: all 0.3s linear;
 	&:hover, &:focus {
 		background-color: $gray;
-		color: $white;
+		color: #000000;
 	}
 }
 
@@ -52,7 +52,7 @@ $navbar-light: $gray-snow;
 
 	@media (min-width: $grid-float-breakpoint) {
 		margin-bottom: 60px;
-		border-bottom: 2em solid transparent;
+		/* border-bottom: 2em solid transparent; */
 	}
 
 }
@@ -259,38 +259,55 @@ $navbar-light: $gray-snow;
 // --------------------------------------------------
 
 // Default navbar
+
+
+
 .navbar-default {
-	background-color: $navbar-dark;
+	background-color: #ffffff;
 
 	@media (min-width: $grid-float-breakpoint) {
-		border-bottom-color: $navbar;
+		border-bottom-color: #ffffff;
+	}
+	
+	.navbar-toggle .icon-bar {
+    	background-color: #000000;
 	}
 
 	.navbar-toggle {
-		color: $white;
+		color: #000000;
 		&:hover, &:focus {
-			background-color: $navbar-dark;
+			background-color: #ffffff;
 		}
 	}
 
 	.navbar-nav {
+		
+		
 		& > li > a {
+			
+			color: #000000;
+			font-weight: bold;
+			font-size: 17pt;
+			text-transform: lowercase;
+			
 			&:hover, &:focus {
-				background-color: $navbar;
-				color: $navbar-light;
+				background-color: #ffffff;
+				color: #3c7c96;
 			}
+			
+		
 		}
 		& > li.active {
 			background-color: $navbar;
 			a, a:hover, a:focus {
-				color: $navbar-light;
-				background-color: $navbar;
+				color: #3c7c96;
+				background-color: #ffffff;
 			}
 		}
 
 		.dropdown-toggle {
-			color: $white;
-			background-color: $link-color;
+			color: #000000;
+			background-color: #ffffff;
 		}
 		@media (min-width: $grid-float-breakpoint) {
 			& > li.active a {
@@ -307,7 +324,7 @@ $navbar-light: $gray-snow;
 				}
 			}
 			& > li.active a {
-				color: $gray-light;
+				color: #c54c46;
 				background-color: darken($brand-primary, 10%);
 			}
 

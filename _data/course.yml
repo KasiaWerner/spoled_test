@@ -1,6 +1,7 @@
-title: Course in a Box
-description: Build Your Very Own Open Course
-modules: [start, community, learning, content, feedback, references]
+title: SpołEd - kurs tworzenia OZE
+description: Otwarta edukacja w praktyce
+modules: ['1. Wprowadzenie', '2. Wprowadzenie do otwartości', '3. Otwarte zasoby edukacyjne', '4. Tworzenie OZE', '5. Promocja i publikacja', '6. Podsumowanie']
+
 signups:
  - name: Geert Hofman
    image: https://media.licdn.com/media/p/3/000/1b0/2c9/2daad0c.jpg
@@ -137,3 +138,40 @@ signups:
  - name: Brandon Patterson
    image: https://pbs.twimg.com/profile_images/79129479/n29003170_31235140_867.jpg
    twitter: thebrandonshow
+ - name: Alvar Maciel
+   image: https://pbs.twimg.com/profile_images/378800000119378128/9487f620fd1e8a5a459f34cb39ab946a_400x400.jpeg
+   twitter: amaciel
+ - name : Mark Williams
+   image : https://pbs.twimg.com/profile_images/686913009021681665/zUefm9PB.png
+   twitter: the_markness
+ - name: Robert Konsdorf
+   image:  http://www.gravatar.com/avatar/7a402bf770629b108763bc8482c18ff3.png
+   twitter: robrig0
+   github: robrigo
+ - name: Lisa Schnellinger
+   image: http://www.nearmediallc.com/wp-content/uploads/2011/01/IGP7933-screen-res.jpg
+   twitter: j_trainer
+ - name : Santiago Ferreira Litowtschenko
+   image : https://mozillians.org/media/uploads/sorl-cache/0b/8a/0b8a9bfe4d80c75e388160787fdbc1ce.jpg
+   twitter: cosmikspin
+ - name : Jeanette Popken
+   image : http://i61.tinypic.com/14nz9lw.jpg
+   twitter: Jeanette_Lena
+ - name : Rachel Dobbs
+   image : https://pbs.twimg.com/profile_images/378800000086565017/72a7a3d6281ac0e2952147eb821b9323.jpeg
+   twitter: RachelDobbs1
+ - name : Anna Galkina
+   image : https://pbs.twimg.com/profile_images/2393578362/cd7xo2t0pe1ekdur5vj4.jpeg
+   twitter : annatation
+ - name : Doug Worsham
+   image : https://pbs.twimg.com/profile_images/2419724898/lhp1sx6mq07q9hdrzxom.png
+   twitter: dmcwo
+ - name : Niall Quinn-Accenture
+   image : http://i2.wp.com/www.quinns.ch/wp-content/uploads/2015/09/niall.png
+   twitter: nshq
+ - name: Ding ding
+   image: https://cdn.pixabay.com/photo/2015/11/10/07/41/eagle-owl-1036426_960_720.jpg
+   twitter: BohemianPasteli
+   name : Mehmet Keçeci
+   image : https://github.com/WhiteSymmetry/badge-course/blob/gh-pages/img/mk.jpg
+   twitter: mkececi

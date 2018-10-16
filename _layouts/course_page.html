@@ -1,11 +1,13 @@
 ---
 layout: base
 ---
+<!-- layout dla modułów kursu -->
+
 {% assign module=page.categories[1] %}
-<div class="clearfix">
+<div class="clearfix course">
 	{% include side_toolbar.html %}
-	<div class="col-md-9 background-white">
-		<div class="col-md-8 col-md-offset-1">
+	<div class="col-md-8 background-white">
+		<div class="col-md-10 col-md-offset-1">
 			<div class="row">
 				<div class="content col-lg-12">
 					{{ content }}
@@ -15,8 +17,8 @@ layout: base
 					{% endif %}
 					{% if prev %}
 						<div class="pagination-section pull-left">
-							<div class="title">
-								Previous section:
+							<div class="title-section">
+								Poprzednia sekcja:
 							</div>
 							<a rel="prev" class="prev" href="{{ site.baseurl }}{{ prev.url }}">
 								{{ prev.title }} </a>
@@ -24,8 +26,8 @@ layout: base
 					{% endif %}
 					{% if next %}
 						<div class="pagination-section pull-right">
-							<div class="title">
-								Next section:
+							<div class="title-section">
+								Następna sekcja:
 							</div>
 							<a rel="next" class="next" href="{{ site.baseurl }}{{ next.url }}"> {{ next.title }}
 							</a>
@@ -35,4 +37,5 @@ layout: base
 			</div>
 		</div>
 	</div>
+</div>
 </div>

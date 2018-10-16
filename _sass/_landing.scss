@@ -18,7 +18,7 @@ section {
 		border-color: $white;
 	}
 }
-.jumbotron {
+/*.jumbotron {
 	background: $jumbotron-color;
 	background-position: bottom center;
 	background-repeat: no-repeat;
@@ -28,8 +28,7 @@ section {
 	position: relative;
 
 	a {
-		color: #fcfcfc;
-		border-bottom: 1px dotted;
+		color: #fcfcfc;;
 		text-decoration: none;
 		transition: all 0.3s linear;
 	}
@@ -38,7 +37,7 @@ section {
 		text-decoration: none;
 	}
 
-}
+} */
 
 .jumbotron header h1 {
 	font-family: $font-family-sans-serif;

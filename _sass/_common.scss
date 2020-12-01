@@ -9,8 +9,19 @@ h1, h2 {
 	font-family: 'Rubik', sans-serif !important;
 }
 
+cite {
+  font-style: italic;
+}
+
+
 p {
 	font-size: 16px;
+}
+
+@media (max-width: 991px) {
+	p {
+		margin-top: 10px;
+	}
 }
 
 .course {
@@ -125,33 +136,6 @@ video {
 	padding: 0;
 }
 
-/* .home-intro {
-	background-image: url("../img/header-home2.svg");
-	background-repeat:no-repeat;
-    	background-size: auto;
-	background-position: center;
-	padding-top: 60px;
-	padding-bottom: 60px; 
-
-}*/
-
-#intro {
-	text-align: center;
-	font-weight: bold;
-	font-size: 26px;
-	/*margin-left: 180px;
-	margin-right: 180px; */
-	/*padding-left: 150px;
-	padding-right: 150px;*/
-	margin-top: 40px;
-	margin-bottom: 40px;
-	margin-left: 40px;
-	margin-right: 40px;
-
-}
-
-
-
 @media (max-width: 991px) {
     .navbar {
         height: auto !important;
@@ -208,7 +192,7 @@ video {
 	}	
 }
 
-@media (max-width: 357px) {
+@media (min-width: 297px) and (max-width: 357px) {
     .jumbotron header h1 {
 	/*top: 130px !important; */
 	left: 0 !important;
@@ -218,13 +202,39 @@ video {
 	}	
 }
 
+@media (max-width: 296px) {
+    .jumbotron header h1 {
+	left: 0 !important;
+	right: 0 !important;
+	font-size: 23pt !important;
+	top: 0 !important; 
+	}
+}	
+
+#intro {
+	text-align: center;
+	font-weight: bold;
+	font-size: 26px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+@media (min-width: 479px) {
+.home-intro {
+	background-image: url("../img/header-home2.svg");
+	background-repeat:no-repeat;
+    	background-size: auto;
+	background-position: center;
+	padding-top: 60px;
+	padding-bottom: 60px; 
+	}
+}
+
 
 @media (max-width: 1155px) {
 	
 	#intro {
 	   font-size: 21px;
-	   /*margin-left: 180px !important;
-	   margin-right: 180px !important; */
 }	
 	.col-md-8 {
 	padding: 0 !important;
@@ -232,15 +242,79 @@ video {
 	
 }
 
-
-@media (max-width: 375px) {
+@media (min-width: 2151px) {
 	
 	#intro {
-	   
+	   margin-left: 300px !important;
+	   margin-right: 350px !important; 
+	}
+}
+
+@media (min-width: 1821px) and (max-width: 2150px) {
+	
+	#intro {
+	   margin-left: 260px !important;
+	   margin-right: 280px !important; 
+	}
+}
+
+@media (min-width: 1566px) and (max-width: 1820px) {
+	
+	#intro {
+	   margin-left: 200px !important;
+	   margin-right: 220px !important; 
+	}
+}
+
+@media (min-width: 1311px) and (max-width: 1565px) {
+	
+	#intro {
+	   margin-left: 180px !important;
+	   margin-right: 200px !important; 
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1310px) {
+	
+	#intro {
+	   margin-left: 140px !important;
+	   margin-right: 160px !important; 
+	}
+}
+
+@media (min-width: 685px) and (max-width: 991px) {
+	
+	#intro {
+	   margin-left: 180px !important;
+	   margin-right: 200px !important; 
+	}
+}
+
+@media (min-width: 552px) and (max-width: 684px) {
+	
+	#intro {
+	   margin-left: 120px !important;
+	   margin-right: 130px !important; 
+	}
+}
+
+@media (min-width: 479px) and (max-width: 551px) {
+	
+	#intro {
+	   margin-left: 100px !important;
+	   margin-right: 100px !important; 
+	}
+}
+
+@media (max-width: 478px) {
+	
+	#intro {
 	   margin-left: 20px !important;
 	   margin-right: 20px !important; 
 	}
 }	
+
+
 
 .screen-title {
 	font-size: 40px;
@@ -364,32 +438,6 @@ li {
 	color: #ffffff;
 }
 
-/*.sidebar li a:before {
-	content: "\f005";
-	font-family: FontAwesome;
-	color: #000000;;
-	position: absolute;
-	left: 29px;
-	line-height: 1.7;
-	width: 25px;
-	height: 25px;
-	border-radius: 50%;
-	border: 3px solid $gray;
-	top: 18px;
-	background-color: #ffcc66;
-	text-align: center;
-	font-size: 0.8em;
-}
-
-.sidebar li.active a:before {
-	content: "\f04b";
-}
-
-.sidebar li a:after {
-	content: "";
-
-} */
-
 
 .sidebar1 {
 	padding: 30px 0;
@@ -436,14 +484,6 @@ li {
 	color: #000000!important; 
 }
 
-/*.sidebar1 li:before {
-	content: "";
-	border-left: 3px solid #aab0bf;
-	position: absolute;
-	left: 40px;
-	height: 100%;
-	top: 0;
-} */
 
 .sidebar1 li.first:before {
 	height: 50%;
@@ -466,6 +506,30 @@ li {
 	color: #ffffff;
 }
 
+
+@media (min-width: 345px) and (max-width: 1045px) {
+	.sidebar-title, .sidebar li, .sidebar1 li {
+		padding-left: 25px !important;
+		}
+}
+
+@media (min-width: 315px) and (max-width: 344px) {
+	.sidebar-title, .sidebar li, .sidebar1 li {
+		padding-left: 15px !important;
+		}
+	.sidebar li, .sidebar1 li {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 314px) {
+	.sidebar-title, .sidebar li, .sidebar1 li {
+		padding-left: 5px !important;
+		}
+	.sidebar li, .sidebar1 li {
+		font-size: 15px;
+	}
+}
 
 .pagination-section {
 	margin: 1em 0;
@@ -558,6 +622,99 @@ blockquote {
 	height: 100% !important;
 }
 
+@media (min-width: 992px) {
+	.modules-content {
+	min-height: 684px;
+	}
+}
+
+img.manifest-logo {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+h2.manifest-title {
+	font-size: 40px;
+	font-weight: bold;
+}
+
+p.manifest-people {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+span.white {
+	color: #ffffff;
+}
+span.violet {
+	color: #603768;
+}
+
+p.manifest {
+	font-size: 18px !important;
+}
+
+p.white {
+	color: #ffffff;
+}
+ 
+.background-green {
+	background-color: #3FA29D;
+	margin-top: -2px; 
+}
+		
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
+
+@media (max-width: 991px) {
+	.row-eq-height {
+		display: block;
+	}
+	
+	img.manifest-logo {
+		 display: block;
+    		 margin-left: auto;
+    		 margin-right: auto;
+		 padding-top: 30px;
+		 padding-bottom: 40px;
+	}
+	
+	p.manifest-people {
+		margin-bottom: 20px;
+	}
+	
+	.background-green {
+		text-align: center;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	
+	img.manifest-img {
+		 display: block;
+    		 margin-left: auto;
+    		 margin-right: auto;
+		 max-width: 50% !important;
+	}
+}
+
+@media (max-width: 420px) {
+	img.manifest-img {
+		 max-width: 100% !important;
+	}
+}
+
+@media (max-width: 300px) {
+	h2, .screen-title {
+		font-size: 35px !important;	
+	}
+	
+}
+
 a.dictionary {
 	text-decoration: none;	
 }
@@ -567,6 +724,24 @@ p.source {
 	margin-left: 40px;
 }
 
+
+.resources-container {
+	height: 325px;
+}
+
+
+p.resource {
+	margin-top: 10px;
+}
+
+p.icons-source {
+	font-size: 13px;
+}
+
+.access {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
 
 .about-project {
 	background: url("../img/baner-o-projekcie 1.png");
@@ -637,7 +812,7 @@ img.license {
 }
 
 img.footer-logo {
-	height: 120px;
+	height: 110px;
 	padding-left: 30px;
 }
 img.footer-sponsor {
@@ -658,6 +833,8 @@ img.footer-sponsor {
 	
 	img.footer-logo {
 		padding-left: 0 !important;
+		margin-top: 10px;
+		margin-bottom: 20px;
 	}
 	
 	img.license {
